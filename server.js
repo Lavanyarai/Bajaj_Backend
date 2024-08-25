@@ -1,5 +1,8 @@
 const express = require('express');
 const cors = require('cors');
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://bajaj-frontend-wine.vercel.app/']
+}));
 
 const app = express();
 const PORT = 5000;
